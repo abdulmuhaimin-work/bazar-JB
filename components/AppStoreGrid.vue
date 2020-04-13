@@ -7,21 +7,14 @@
             <img :src="`/products/${item.img}`" />
           </NuxtLink>
         </div>
-        <star-rating
-          :rating="item.starrating"
-          active-color="#000"
-          :star-size="15"
-          :show-rating="false"
-          style="margin: 5px 0"
-        ></star-rating>
         <h3>{{ item.name }}</h3>
-        <h4 class="price">{{ item.price | dollar }}</h4>
+        <h4 class="price">{{ item.price | ringgit }}</h4>
         <NuxtLink :to="`product/${item.id}`">
-          <button class="multi-item">View Item ></button>
+          <button class="multi-item">Maklumat ></button>
         </NuxtLink>
       </div>
     </transition-group>
-    <aside>
+    <!-- <aside>
       <h3>Special Sale</h3>
       <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam libero iusto nemo laboriosam perferendis voluptas ullam officiis, quibusdam quas quam eveniet est fugit delectus corporis incidunt nam esse suscipit itaque?</p>
       <h3>Filter by Price:</h3>
@@ -40,7 +33,7 @@
       />
       <span class="min">${{ min }}</span>
       <span class="max">${{ max }}</span>
-    </aside>
+    </aside> -->
   </div>
 </template>
 
@@ -64,9 +57,6 @@ export default {
     filteredprice() {
       return this.data.filter(el => el.price < this.pricerange);
     }
-  },
-  components: {
-    StarRating
   }
 };
 </script>
@@ -78,7 +68,7 @@ export default {
 }
 
 .img-contain {
-  max-height: 200px;
+  max-height: 244px;
   display: flex;
   align-content: center;
   align-items: center;
@@ -94,11 +84,6 @@ export default {
   align-items: center;
   flex-direction: column;
   margin: 20px 0;
-}
-
-aside {
-  height: 100%;
-  width: 100%;
 }
 
 .max {

@@ -15,18 +15,18 @@ export default {
       boxes: [
         {
           icon: "/icon-package.svg",
-          heading: "Free Shipping Globally",
-          details: "Delivery in 4 Days"
+          heading: "Kami hantar",
+          details: "Anda tunggu je dirumah"
         },
         {
           icon: "/icon-cal.svg",
-          heading: "24/7 Customer Service",
-          details: "Call us any time"
+          heading: "Order harini",
+          details: "dapat esok"
         },
         {
           icon: "/icon-service.svg",
-          heading: "Easy Online Returns",
-          details: "Send Within 30 Days"
+          heading: "Terokai makanan bazar",
+          details: "dunia bazar ramadhan versi digital"
         }
       ]
     };

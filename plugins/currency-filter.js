@@ -1,7 +1,7 @@
 import Vue from "vue"
 
-Vue.filter("dollar", function(value) {
+Vue.filter("ringgit", function(value) {
   // Using a template literal here, that's why there are two dollar signs.
   // The first is an actual dollar.
-  return `$${parseFloat(value).toFixed(2)}`
+  return `RM${parseFloat(value).toFixed(2)}`
 })
